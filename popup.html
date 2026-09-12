@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptVault</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div>
+                <h1>🔐 PromptVault</h1>
+                <p>Your Prompt Library</p>
+            </div>
+        </header>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search prompts..."
+            >
+        </div>
+
+        <button id="addPromptBtn" class="add-btn">
+            + Add New Prompt
+        </button>
+
+        <div id="promptList" class="prompt-list">
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 id="modalTitle">Add Prompt</h2>
+                <button id="closeModal">&times;</button>
+            </div>
+
+            <label for="promptTitle">Title</label>
+
+            <input
+                type="text"
+                id="promptTitle"
+                placeholder="e.g. Coding Assistant"
+            >
+
+            <label for="promptBody">Prompt</label>
+
+            <textarea
+                id="promptBody"
+                placeholder="Write your prompt here..."
+            ></textarea>
+
+            <div class="modal-actions">
+                <button id="cancelBtn" class="cancel-btn">
+                    Cancel
+                </button>
+
+                <button id="saveBtn" class="save-btn">
+                    Save Prompt
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="popup.js"></script>
+
+</body>
+</html>

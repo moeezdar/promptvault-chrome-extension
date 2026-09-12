@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 400px;
+    min-height: 500px;
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #17221d;
+}
+
+.app {
+    padding: 18px;
+}
+
+/* Header */
+
+.header {
+    margin-bottom: 18px;
+}
+
+.header h1 {
+    font-size: 23px;
+}
+
+.header p {
+    color: #6b7771;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* Search */
+
+.search-box {
+    margin-bottom: 12px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #d5ddd9;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    border-color: #4b8068;
+}
+
+/* Add button */
+
+.add-btn {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    background: #285943;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.add-btn:hover {
+    background: #1f4635;
+}
+
+/* Prompt cards */
+
+.prompt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.prompt-card {
+    background: white;
+    border: 1px solid #dce4df;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.prompt-card h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.prompt-card p {
+    color: #66716b;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 7px;
+}
+
+.actions button {
+    border: none;
+    border-radius: 7px;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.insert-btn {
+    background: #285943;
+    color: white;
+}
+
+.edit-btn {
+    background: #e8eee9;
+    color: #285943;
+}
+
+.delete-btn {
+    background: #f8e7e7;
+    color: #a33a3a;
+}
+
+/* Empty state */
+
+.empty {
+    text-align: center;
+    color: #7a857f;
+    padding: 35px 10px;
+    font-size: 13px;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    width: 100%;
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.modal-header h2 {
+    font-size: 18px;
+}
+
+.modal-header button {
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal-content label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    border: 1px solid #d5ddd9;
+    border-radius: 9px;
+    padding: 10px;
+    margin-bottom: 14px;
+    outline: none;
+    font-family: inherit;
+}
+
+.modal-content textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+    border-color: #4b8068;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.cancel-btn,
+.save-btn {
+    border: none;
+    padding: 9px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #e8ecea;
+}
+
+.save-btn {
+    background: #285943;
+    color: white;
+}
+
+/* Toast */
+
+.toast {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background: #17221d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    display: none;
+}
